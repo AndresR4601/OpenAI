@@ -1,0 +1,15 @@
+<div>
+    <h3>Image generator</h3>
+    <form>
+        <input
+            type="text"
+            name="UsedPrompt"
+            placeholder="Describe image"
+            [(ngModel)] = 'UsedPrompt'
+        />
+        <input type="button" value="Image" (click)="postCompletition()" />
+    </form>
+    <div *ngIf="result" class="result">
+        <img src="{{result}}" alt="Generated image"/>
+    </div>
+</div>

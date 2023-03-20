@@ -1,0 +1,19 @@
+<div>
+        <h3>¿How politcally incorrect is it?</h3>
+        <form>
+            <input
+                type="text"
+                name="input"
+                placeholder="Write something bad"
+                [(ngModel)] = 'input'
+            />
+            <input type="button" value="Values" (click)="postCompletition()" />
+        </form>
+            <p>Hate: {{result.hate}}</p>
+            <p>Hate/threatening: {{result.hate_threatening}}</p>
+            <p>Self-harm: {{result.self_harm}}</p>
+            <p>Sexual: {{result.sexual}}</p>
+            <p>Sexual/minors: {{result.sexual_minors}}</p>
+            <p>Violence: {{result.violence}}</p>
+            <p>Violence/graphics: {{result.violence_graphic}}</p>
+</div>
